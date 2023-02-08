@@ -6,7 +6,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "NordicDFUDynamic",
+  name: "SPM-Wrapper",
   platforms: [
     .macOS(.v10_14),
     .iOS(.v9),
