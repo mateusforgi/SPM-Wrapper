@@ -25,7 +25,7 @@ let package = Package(
     targets: [
         .target(
             name: "NordicDFUDynamic",
-            dependencies: [.product(name: "NordicDFU", package: "IOS-DFU-Library"), "ZIPFoundationDynamic"]
+            dependencies: [.product(name: "NordicDFU", package: "IOS-DFU-Library")]
         ),
          .target(
             name: "ZIPFoundationDynamic",
