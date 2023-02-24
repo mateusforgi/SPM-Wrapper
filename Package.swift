@@ -14,11 +14,17 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/NordicSemiconductor/IOS-DFU-Library", .exact("4.12.0")),
+        .package(url: "https://github.com/weichsel/ZIPFoundation", .exact("0.9.11")
+    )
     ],
     targets: [
         .target(
             name: "NordicDFUDynamic",
-            dependencies: [.product(name: "NordicDFU", package: "IOS-DFU-Library")]
+            dependencies: [.product(name: "NordicDFU", package: "IOS-DFU-Library"), "ZIPFoundationDynamic"]
+        ),
+         .target(
+            name: "ZIPFoundationDynamic",
+            dependencies: ["ZIPFoundation"]
         ),
     ]
 )
