@@ -11,6 +11,11 @@ let package = Package(
             type: .dynamic,
             targets: ["NordicDFUDynamic"]
         ),
+          .library(
+            name: "ZIPFoundationDynamic",
+            type: .dynamic,
+            targets: ["ZIPFoundationDynamic"]
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/NordicSemiconductor/IOS-DFU-Library", .exact("4.12.0")),
